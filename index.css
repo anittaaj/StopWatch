@@ -3,8 +3,66 @@ body{
 }
 h1{
     margin: auto;
+    margin-top: 10px;
     width: max-content;
     color: brown;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: xx-large;
+}
+.container{
+    padding: 30px;
+    width:650px;
+    margin: auto;
+    margin-top: 50px;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    background-color: aliceblue;
+}
+.footer{
+   
+    width:max-content;
+    margin: auto;
+    margin-top: 10px;
+}
+.main{
+    
+    width:750px;
+    margin: auto;
+    margin-top: 10%;
+    background-color: aquamarine;
+    padding: 10px;
+    border: 5px rgb(182, 31, 31) solid;
+}
+#minutes, #seconds,#mili{
+    width: 25%;
+    height: 200px;
+    border: 1px black solid;
+    border-radius: 10px;
+    background-color: wheat;
+}
+#one, #two{
+    width: 20%;
+    height: 200px;
+    background-color: aliceblue;
+}
+h2{
+    margin: auto;
+    width: max-content;
+    color: tomato;
+    font-size: 150px;
+}
+h4{
+    color: tomato;
+    font-size: x-large;
+    float: right;
+}
+#b1 ,#b2{
+
+    width: max-content;
+    height: max-content;
+    border-radius: 10px;
+    border: 1px solid whitesmoke;
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
