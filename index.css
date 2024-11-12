@@ -46,7 +46,7 @@ h1{
     height: 200px;
     background-color: aliceblue;
 }
-h2{
+h2,#M ,#S, #MS{
     margin: auto;
     width: max-content;
     color: tomato;
