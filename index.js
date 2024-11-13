@@ -9,7 +9,7 @@ var milisec=document.getElementById('mili');
 let st=0;
 let interval="";
 
-function watch1()
+function watch1() // function for the counting
 {
     ms++;
     if(ms/60 === 1)
@@ -25,7 +25,7 @@ function watch1()
 
     if(ms < 10)
     {
-        milisec='0';
+        milisec='0'+ ms.toString();
     }
     else
     {
@@ -34,7 +34,7 @@ function watch1()
 
     if(s < 10)
     {
-        seconds='0';
+        seconds='0'+s.toString();
     }
     else
     {
@@ -44,7 +44,7 @@ function watch1()
 
     if(m < 10)
     {
-        minutes='0';
+        minutes='0'+ m.toString();
     }
     else
     {
@@ -57,17 +57,34 @@ function watch1()
 }
 
 
-function watch()
+function watch() // function call when the button pressed
 {
     if(st==0)
     {
-        interval=window.setInterval(watch1,100);
+        interval=window.setInterval(watch1,10);
         document.getElementById('b1').innerHTML='Pause';
+        st=1;
     }
     else if(st == 1)
     {
-        window.clearIntervalInterval(interval);
+        window.clearInterval(interval);
         document.getElementById('b1').innerHTML='Start';
+        st=0;
     }
+
+}
+
+
+function reset()
+{
+    hm=0;
+    s=0;
+    ms=0;
+
+    document.getElementById('M').innerHTML=m;
+    document.getElementById('S').innerHTML=s;
+    document.getElementById('MS').innerHTML=ms;
+
+    st=0;
 
 }
